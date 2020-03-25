@@ -1,0 +1,8 @@
+Remember to change bin/idea.properties in the jetbrains install directory.
+
+idea.config.path=${user.home}/.config/<product>
+idea.system.path=${user.home}/.cache/<product>
+idea.log.path=${user.home}/.cache/<product>/log
+idea.plugins.path=${user.home}/.local/share/<product>/plugins
+
+Afterwards, remove ~/*Idea* directories.

@@ -1,3 +1,22 @@
+This repostory is a collection of scripts that set up environment variables and other settings to make them XDG compliant.
+
+Usage involves 3 steps.
+
+Clone this repo into XDG_DATA_HOME.
+
+Add XDG environment variables (if they aren't already set) and call the app scripts to the shell's start up file.
+
+# XDG setup
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+
+. $XDG_DATA_HOME/xdg_comply/env.sh
+
+Then source the startup file and run the first time use file. These commands are separated because they don't make sense to run repeatedly. If the whole filesystem will be restarted often, run ftu.sh before env.sh.
+. $XDG_DATA_HOME/xdg_comply/ftu.sh
+
+
 For initial investigation into a file in the ~ directory, check here:
 https://wiki.archlinux.org/index.php/XDG_Base_Directory
 

@@ -5,7 +5,7 @@
 # shell has little work to do.
 # However, ftu.sh files should be idempotent so that this script can be run if any ftu script is changed.
 
-dirs=$(find $XDG_DATA_HOME/xdg_convert/* -maxdepth 0 -type d)
+dirs=$(find $XDG_DATA_HOME/xdg_comply/* -maxdepth 0 -type d)
 
 if [ ! -z "$dirs" ]; then
     for app_dir in ${dirs}; do

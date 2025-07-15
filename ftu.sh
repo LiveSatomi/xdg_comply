@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # This script invokes ftu.sh (first time use) in all immediate subdirectories of $XDG_DATA_HOME/xdg_convert
 # Invoked ftu.sh files should set up as much as possible so that the respective env file that must be run for each
 # shell has little work to do.
